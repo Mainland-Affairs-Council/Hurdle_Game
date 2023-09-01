@@ -5,7 +5,7 @@ let highestScore = 0;
 //let backgroundImage;
 let isGameOver = false; // Define isGameOver
 let resetEnabled = false;
-let instructionDisplayTime = 2000; // 5 seconds in milliseconds
+let instructionDisplayTime = 3000; // 5 seconds in milliseconds
 let displayInstructions = true;
 let instructionStartTime;
 
@@ -112,17 +112,20 @@ function displayGameInstructions() {
   fill(255,140);
   noStroke();
   rectMode(CENTER);
-  rect(width / 2, height / 2+10,150,56,6);
-  fill(255);
-  stroke(0);
-  strokeWeight(4);
+  rect(width / 2, height / 2+12,130,46,6);
+  fill(0,105,52);
+  stroke(0,105,52);
+  strokeWeight(0.2);
   textStyle(BOLD);
-  textSize(26);
+  //textStyle(ITALIC);
+  textSize(24);
   textAlign(CENTER, CENTER);
-  text('💡 遊戲提示 💡', width / 2, height / 2 - 38);
+  text('✨國家代表隊前進亞運✨', width / 2, height / 2 - 65);
+  text('一起為中華隊加油', width / 2, height / 2 - 38);
   fill(0,105,52);
   noStroke();
   textSize(16);
+  textStyle(ITALIC);
   text('點擊 → 跳躍', width / 2, height / 2 + 2);
   text('雙擊 → 雙跳', width / 2, height / 2 + 25);
 
