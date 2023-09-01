@@ -128,6 +128,11 @@ function displayGameInstructions() {
   textStyle(ITALIC);
   text('點擊 → 跳躍', width / 2, height / 2 + 2);
   text('雙擊 → 雙跳', width / 2, height / 2 + 25);
+  
+  textSize(14);
+  textStyle(NORMAL);
+  fill(255,100,0);
+  text('*以電腦版/Safari瀏覽器獲得最佳遊戲體驗*', width / 2, height / 2 +52);
 
   // Check if it's time to hide the instructions
   let currentTime = millis();
